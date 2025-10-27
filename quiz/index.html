@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Twitter (X)</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Quiz Twitter (X)</h1>
+      </header>
+      <main>
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number"></span> &#8212;
+            <span id="question-text"></span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span><span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span><span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span><span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span><span class="question-answer"></span></button>
+          </div>
+        </div>
+        <div id="score-container" class="hide">
+          <h2>Parabéns</h2>
+          <p id="display-score"><span></span>%</p>
+          <p>
+            Você acertou <span id="correct-answers"></span> de
+            <span id="questions-qty"></span> perguntas
+          </p>
+          <button id="restart">Refazer quiz!</button>
+        </div>
+        <button class="answer-template hide">
+          <span class="btn-letter"></span> <span class="question-answer"></span>
+        </button>
+      </main>
+    </div>
+  </body>
+</html>
